@@ -10,4 +10,5 @@ COPY . .
 
 EXPOSE 8501
 
-CMD ["streamlit", "run", "frontend_predict.py"]
+ENTRYPOINT [ "streamlit", "run" ]
+CMD [ "frontend_predict.py", "--server.headless", "true", "--server.fileWatcherType", "none", "--browser.gatherUsageStats", "false"]
