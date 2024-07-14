@@ -59,3 +59,4 @@ file_name = file_name.split('_')
 actual_weight = file_name[-2]
 print("\n\n\nPredicted weight:", predicted_weight)
 print(f"Actual weight: {actual_weight}")
+print("Hello world")
