@@ -1,15 +1,15 @@
-FROM python:3.9-slim
+FROM --platform=$BUILDPLATFORM python:3.9-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-libgl1-mesa-glx \
-libglib2.0-0 \
-sudo \
-curl \
-vim \
-build-essential \
-software-properties-common \
-ssh \
-&& apt-get clean && rm -rf /var/lib/apt/lists/*
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    sudo \
+    curl \
+    vim \
+    build-essential \
+    software-properties-common \
+    ssh \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /cattle_weight
 
