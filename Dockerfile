@@ -14,7 +14,7 @@ WORKDIR /cattle_weight
 
 COPY requirements.txt /cattle_weight/requirements.txt
 
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
