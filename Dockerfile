@@ -11,4 +11,4 @@ COPY . .
 EXPOSE 8501
 
 ENTRYPOINT [ "streamlit", "run" ]
-CMD [ "frontend_predict.py", "--server.headless", "true", "--server.fileWatcherType", "none", "--browser.gatherUsageStats", "false"]
+CMD [ "frontend_predict.py", "--server.port", "8501", "--server.fileWatcherType", "none"]
